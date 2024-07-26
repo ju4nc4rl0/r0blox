@@ -1,5 +1,5 @@
 repeat task.wait() until game:IsLoaded()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Extras/Global"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ju4nc4rl0/r0blox/main/Global"))()
 
 local ScreenGui = Instance.new("ScreenGui")
 if syn and syn.protect_gui then
@@ -27,6 +27,6 @@ wait()
 end
 ScreenGui:Destroy()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Games/Adopt-Me"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ju4nc4rl0/r0blox/main/letmego"))()
 
 wait(5)
