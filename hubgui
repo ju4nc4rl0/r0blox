@@ -1,0 +1,32 @@
+repeat task.wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Extras/Global"))()
+
+local ScreenGui = Instance.new("ScreenGui")
+if syn and syn.protect_gui then
+	syn.protect_gui(ScreenGui)
+	ScreenGui.Parent = CoreGui
+elseif gethui then
+	ScreenGui.Parent = gethui()
+else
+	ScreenGui.Parent = CoreGui
+end
+
+local ImageLabel = Instance.new("ImageLabel")
+ImageLabel.Parent = ScreenGui
+ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.Position = UDim2.new(0.5, -(303 / 2), 0.5, -(263 / 2))
+ImageLabel.Rotation = 0
+ImageLabel.Size = UDim2.new(0, 303, 0, 263)
+ImageLabel.Image = "rbxassetid://8429081004"
+ImageLabel.ImageTransparency = 1
+
+for Index = 1, 50, 2 do
+ImageLabel.ImageTransparency = ImageLabel.ImageTransparency - 0.1
+wait()
+end
+ScreenGui:Destroy()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Games/Adopt-Me"))()
+
+wait(5)
